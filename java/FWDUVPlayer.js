@@ -1943,7 +1943,7 @@ var FWDUVPCategories = function(_d, prt){
 			_s.noSearchFound_do.getStyle().fontFamily = "Arial";
 			_s.noSearchFound_do.getStyle().fontSize= "12px";
 			_s.noSearchFound_do.getStyle().color = _s.inputColor_str;
-			_s.noSearchFound_do.setInnerHTML("NOTHING FOUND!");
+			_s.noSearchFound_do.setInnerHTML("1946!");
 			_s.noSearchFound_do.setVisible(false);
 			_s.addChild(_s.noSearchFound_do);
 			
@@ -6076,28 +6076,28 @@ var FWDUVPController = function(
 		//################################//		
 		_s.setupToolTips = function(){
 			FWDUVPToolTip.setPrototype();
-			_s.playPauseToolTip_do = new FWDUVPToolTip(_s.playPauseButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "play / pause", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
+			_s.playPauseToolTip_do = new FWDUVPToolTip(_s.playPauseButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "играть/пауза", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
 			document.documentElement.appendChild(_s.playPauseToolTip_do.screen);
 			
 			if(_s.showControllerWhenVideoIsStopped_bl){
 				FWDUVPToolTip.setPrototype();
-				_s.prevButtonToolTip_do = new FWDUVPToolTip(_s.prevButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "previous video", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
+				_s.prevButtonToolTip_do = new FWDUVPToolTip(_s.prevButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "предыдущее видеоo", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
 				document.documentElement.appendChild(_s.prevButtonToolTip_do.screen);
 				
 				FWDUVPToolTip.setPrototype();
-				_s.nextButtonToolTip_do = new FWDUVPToolTip(_s.nextButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "next video", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
+				_s.nextButtonToolTip_do = new FWDUVPToolTip(_s.nextButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "следующее видео", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
 				document.documentElement.appendChild(_s.nextButtonToolTip_do.screen);
 			}
 			
 			if(_s.showPlaylistsButtonAndPlaylists_bl){
 				FWDUVPToolTip.setPrototype();
-				_s.playlistsButtonToolTip_do = new FWDUVPToolTip(_s.categoriesButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "show playlists", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
+				_s.playlistsButtonToolTip_do = new FWDUVPToolTip(_s.categoriesButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "показывать списки воспроизведения", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
 				document.documentElement.appendChild(_s.playlistsButtonToolTip_do.screen);
 			}
 			
 			if(_s.showPlaylistButtonAndPlaylist_bl){
 				FWDUVPToolTip.setPrototype();
-				_s.playlistButtonToolTip_do = new FWDUVPToolTip(_s.playlistButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "show / hide playlist", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
+				_s.playlistButtonToolTip_do = new FWDUVPToolTip(_s.playlistButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "показать/скрыть списки воспроизведения", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
 				document.documentElement.appendChild(_s.playlistButtonToolTip_do.screen);
 			}
 			
@@ -6132,7 +6132,7 @@ var FWDUVPController = function(
 			
 			if(_s.showInfoButton_bl){
 				FWDUVPToolTip.setPrototype();
-				_s.infoButtonToolTip_do = new FWDUVPToolTip(_s.infoButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "more info", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
+				_s.infoButtonToolTip_do = new FWDUVPToolTip(_s.infoButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "информация", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
 				document.documentElement.appendChild(_s.infoButtonToolTip_do.screen);
 			}
 			
@@ -6144,7 +6144,7 @@ var FWDUVPController = function(
 			
 			if(_s.fullScreenButton_do){
 				FWDUVPToolTip.setPrototype();
-				_s.fullscreenButtonToolTip_do = new FWDUVPToolTip(_s.fullScreenButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "fullscreen / normalscreen", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
+				_s.fullscreenButtonToolTip_do = new FWDUVPToolTip(_s.fullScreenButton_do, _d.toopTipBk_str, _d.toopTipPointer_str, "Полный экран/Обычный экран", _s.buttonsToolTipFontColor_str, _s.buttonsToolTipHideDelay);
 				document.documentElement.appendChild(_s.fullscreenButtonToolTip_do.screen);
 			}
 		};
@@ -20518,7 +20518,7 @@ var FWDUVPController = function(
 				
 			if(_s.input_do){
 				_s.hasInputFocus_bl = false;
-				_s.input_do.screen.value = "Search";
+				_s.input_do.screen.value = "";
 			}
 				
 			_s.setupThumbnails();
@@ -20693,7 +20693,7 @@ var FWDUVPController = function(
 			_s.noSearchFound_do.getStyle().fontFamily = "Arial";
 			_s.noSearchFound_do.getStyle().fontSize= "12px";
 			_s.noSearchFound_do.getStyle().color = _s.inputColor_str;
-			_s.noSearchFound_do.setInnerHTML("NOTHING FOUND!");
+			_s.noSearchFound_do.setInnerHTML("Тихо, как в танке...");
 			_s.noSearchFound_do.setVisible(false);
 			_s.mainHld.addChild(_s.noSearchFound_do);
 			
