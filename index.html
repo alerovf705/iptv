@@ -356,7 +356,15 @@
 	<!--конец-->
 </ul>
 <!--  /Федеральные каналы -->
-
+<!-- sw -->
+<script>
+	if ('serviceWorker' in navigator) {
+		navigator.serviceWorker
+			.register('/sw.js')
+			.then(function () { console.log("Service Worker Registered"); });
+	}
+</script>
+<!-- /sw -->
 </body>
 
 </html>
