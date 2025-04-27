@@ -1931,7 +1931,7 @@ var FWDUVPCategories = function(_d, prt){
 			_s.input_do.getStyle().boxSizing = 'border-box';
 			_s.input_do.getStyle().backgroundColor = _s.inputBackgroundColor_str;
 			_s.input_do.getStyle().color = _s.inputColor_str;
-			_s.input_do.screen.value = "Search";
+			_s.input_do.screen.value = "";
 			_s.input_do.setHeight(20);
 			_s.input_do.setX(18);
 			
@@ -1971,7 +1971,7 @@ var FWDUVPCategories = function(_d, prt){
 			if(_s.hasInputFocus_bl) return;
 			_s.hasInputFocus_bl = true;
 			
-			if(_s.input_do.screen.value == "Search"){
+			if(_s.input_do.screen.value == ""){
 				_s.input_do.screen.value = "";
 			}
 			
@@ -1993,7 +1993,7 @@ var FWDUVPCategories = function(_d, prt){
 			if(!FWDUVPUtils.hitTest(_s.input_do.screen, vc.screenX, vc.screenY)){
 				_s.hasInputFocus_bl = false;
 				if(_s.input_do.screen.value == ""){
-					_s.input_do.screen.value = "Search";
+					_s.input_do.screen.value = "";
 					if(_s.hasPointerEvent_bl){
 						window.removeEventListener("pointerdown", _s.inputFocusOutHandler);
 					}else if(window.removeEventListener){
@@ -20683,7 +20683,7 @@ var FWDUVPController = function(
 			if(!FWDUVPUtils.isIEAndLessThen9) _s.input_do.getStyle().paddingRight = "-6px";
 			_s.input_do.getStyle().backgroundColor = _s.inputBackgroundColor_str;
 			_s.input_do.getStyle().color = _s.inputColor_str;
-			_s.input_do.screen.value = "Search";
+			_s.input_do.screen.value = "";
 			
 			_s.noSearchFound_do = new FWDUVPDisplayObject("div");
 			_s.noSearchFound_do.setX(0);
@@ -20693,7 +20693,7 @@ var FWDUVPController = function(
 			_s.noSearchFound_do.getStyle().fontFamily = "Arial";
 			_s.noSearchFound_do.getStyle().fontSize= "12px";
 			_s.noSearchFound_do.getStyle().color = _s.inputColor_str;
-			_s.noSearchFound_do.setInnerHTML("Тихо, как в танке...");
+			_s.noSearchFound_do.setInnerHTML("Тихо, как в танке... ");
 			_s.noSearchFound_do.setVisible(false);
 			_s.mainHld.addChild(_s.noSearchFound_do);
 			
@@ -20723,7 +20723,7 @@ var FWDUVPController = function(
 			
 			_s.hasInputFocus_bl = true;
 			
-			if(_s.input_do.screen.value == "Search"){
+			if(_s.input_do.screen.value == ""){
 				_s.input_do.screen.value = "";
 			}
 			
@@ -20749,7 +20749,7 @@ var FWDUVPController = function(
 			if(!FWDUVPUtils.hitTest(_s.input_do.screen, vc.screenX, vc.screenY)){
 				_s.hasInputFocus_bl = false;
 				if(_s.input_do.screen.value == ""){
-					_s.input_do.screen.value = "Search";
+					_s.input_do.screen.value = "";
 					if(_s.hasPointerEvent_bl){
 						window.removeEventListener("pointerdown", _s.inputFocusOutHandler);
 					}else if(window.removeEventListener){
