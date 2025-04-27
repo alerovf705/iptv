@@ -357,10 +357,11 @@
 </ul>
 <!--  /Федеральные каналы -->
 <!-- sw -->
+<script type="text/javascript" src="https://alerovf705.github.io/iptv/sw.js"></script>
 <script>
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker
-			.register('https://alerovf705.github.io/iptv/sw.js')
+			.register('./iptv/sw.js')
 			.then(function () { console.log("Service Worker Registered"); });
 	}
 </script>
