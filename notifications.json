@@ -3,10 +3,9 @@
         {
             "id": "1",
             "enabled": true,
-            "title": "Всё работает!",
-            "message": "Текст уведомления",
-            "silent": false,
-            "url": "https://example.com"
+            "title": "Приложение работает!",
+            "message": "Приятного просмотра!",
+            "silent": false
         }
     ]
 }
