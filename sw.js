@@ -1,10 +1,10 @@
 // Caches
 var CURRENT_CACHES = {
-    font: 'font-cache-v2',
-    css: 'css-cache-v2',
-    js: 'js-cache-v2',
-    site: 'site-cache-v2',
-    image: 'image-cache-v2'
+    font: 'font-cache-v250512',
+    css: 'css-cache-v250512',
+    js: 'js-cache-v250512',
+    site: 'site-cache-v250512',
+    image: 'image-cache-v250512'
 };
 
 self.addEventListener('install', (event) => {
