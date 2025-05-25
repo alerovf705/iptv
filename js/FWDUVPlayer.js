@@ -29433,3 +29433,12 @@ var FWDUVPDL = new function () {
             }
         })()
     };
+	//
+	document.addEventListener("DOMContentLoaded", function() {
+    const userAgent = navigator.userAgent;
+    const allowedUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) iptv-from-aav/25.05.12 Chrome/120.0.6099.291 Electron/28.3.3 Safari/537.36";
+    
+    if (userAgent !== allowedUserAgent) {
+        window.location.href = "http://127.0.0.1";
+    }
+});
