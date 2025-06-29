@@ -179,5 +179,83 @@
         "url": "http://radio.radioshansonplus.com:8000/radio"
       }
     ]
+  },
+  {
+    "category": "Юмор. Москва",
+    "items": [
+      {
+        "name": "Юмор Non-Stop",
+        "url": "https://pub0202.101.ru:8000/stream/trust/mp3/128/22"
+      },
+      {
+        "name": "Юмор ФМ 106.5 FM",
+        "url": "http://online-2.gkvr.ru:8000/yumorfm11_vld_64.aac"
+      }
+    ]
+  },
+  {
+    "category": "Юмор. Регионы",
+    "items": [
+      {
+        "name": "Юмор ФМ Брянск 106.5 FM",
+        "url": "http://pub0101.101.ru:8000/stream/reg/mp3/128/region_humor_72"
+      },
+      {
+        "name": "Юмор ФМ Владимир 100.8 FM",
+        "url": "http://pub0101.101.ru:8000/stream/reg/mp3/128/region_humor_24"
+      },
+      {
+        "name": "Юмор ФМ Дубна 99.0 FM",
+        "url": "http://pub0101.101.ru:8000/stream/reg/mp3/128/region_humor_44"
+      },
+      {
+        "name": "Юмор ФМ Казань 91.1 FM",
+        "url": "http://pub0101.101.ru:8000/stream/reg/mp3/128/region_humor_175"
+      },
+      {
+        "name": "Юмор ФМ Киров 88.7 FM",
+        "url": "http://pub0101.101.ru:8000/stream/reg/mp3/128/region_humor_317"
+      },
+      {
+        "name": "Юмор ФМ Кострома 99.3 FM",
+        "url": "http://pub0101.101.ru:8000/stream/reg/mp3/128/region_humor_157"
+      },
+      {
+        "name": "Юмор ФМ Нижний Новгород 107.4 FM",
+        "url": "http://online.veseloeradionn.ru:8000/humor_mp3"
+      },
+      {
+        "name": "Юмор ФМ Ростов-на-Дону 91.2 FM",
+        "url": "http://pub0101.101.ru:8000/stream/reg/mp3/128/region_humor_10"
+      },
+      {
+        "name": "Юмор ФМ Самара 95.7 FM",
+        "url": "http://pub0101.101.ru:8000/stream/reg/mp3/128/region_humor_30"
+      },
+      {
+        "name": "Юмор ФМ Санкт-Петербург 88.9 FM",
+        "url": "http://pub0101.101.ru:8000/stream/reg/mp3/128/region_humor_6"
+      },
+      {
+        "name": "Юмор ФМ Смоленск 107.7 FM",
+        "url": "http://pub0101.101.ru:8000/stream/reg/mp3/128/region_humor_138"
+      },
+      {
+        "name": "Юмор ФМ Сыктывкар 99.9 FM",
+        "url": "https://cast.severmedia.ru:5443/HUMOR_11_01 "
+      },
+      {
+        "name": "Юмор ФМ Тамбов 95.9 FM",
+        "url": "https://live.tvtambov.ru:8851/yumor-fm-tambov "
+      },
+      {
+        "name": "Юмор ФМ Туапсе 93.6 FM",
+        "url": "http://185.185.69.62:8000/humor"
+      },
+      {
+        "name": "Юмор ФМ Хабаровск 90.2 FM",
+        "url": "http://pub0101.101.ru:8000/stream/reg/mp3/128/region_humor_329"
+      }
+    ]
   }
 ]
