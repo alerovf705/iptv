@@ -135,6 +135,22 @@
       {
         "name": "Радио Берег - Повествование",
         "url": "https://radio-bereg.ru/povestvovanie"
+      },
+      {
+        "name": "Читаем Добротолюбие",
+        "url": "https://radio.azbyka.ru/dobrotolubie "
+      },
+      {
+        "name": "Читаем Евангелие",
+        "url": "https://radio.azbyka.ru/evangelie "
+      },
+      {
+        "name": "Читаем Евангелие (синод. муз.)",
+        "url": "https://radio.azbyka.ru/chitaem-evangelie-sinod-muz "
+      },
+      {
+        "name": "Читаем Евангелие (цся)",
+        "url": "https://radio.azbyka.ru/chitaem-evangelie-csya "
       }
     ]
   },
@@ -184,12 +200,8 @@
     "category": "Юмор. Москва",
     "items": [
       {
-        "name": "Юмор Non-Stop",
+        "name": "Юмор Non-Stop (только юмор и песни с юмором)",
         "url": "https://pub0202.101.ru:8000/stream/trust/mp3/128/22"
-      },
-      {
-        "name": "Юмор ФМ 106.5 FM",
-        "url": "http://online-2.gkvr.ru:8000/yumorfm11_vld_64.aac"
       }
     ]
   },
