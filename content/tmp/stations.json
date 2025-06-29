@@ -83,7 +83,11 @@
         "url": "https://srv01.gpmradio.ru/stream/air/aac/64/200"
       },
       {
-        "name": "Ретро FM",
+        "name": "Релакс FM ",
+        "url": "https://pub0201.101.ru/stream/trust/mp3/128/24"
+      },
+      {
+        "name": "Relax FM Chillout",
         "url": "http://emgregion.hostingradio.ru:8064/moscow.retrofm.mp3"
       },
       {
@@ -180,6 +184,10 @@
       {
         "name": "ROCK FM",
         "url": "http://nashe1.hostingradio.ru/rock-128.mp3"
+      },
+    {
+        "name": "Russian Punk rock",
+        "url": "http://79.120.77.11:8000/punkru"
       }
     ]
   },
