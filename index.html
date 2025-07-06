@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Бесплатное ТВ для всех от ААВ!</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1 user-scalable=no" />
+
+	<link rel="stylesheet" type="text/css" href="content/global.css" />
+	<!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">-->
+
+	<script type="text/javascript" src="js/FWDUVPlayer.js"></script>
+
+	<!-- Setup video player-->
+	<script type="text/javascript">
+		FWDUVPUtils.onReady(function () {
+
+			new FWDUVPlayer({
+				//main settings
+				instanceName: "player1",
+				parentId: "myDiv",
+				playlistsId: "playlists",
+				mainFolderPath: "content",
+				skinPath: "modern_skin_dark",
+				displayType: "fullscreen",
+				initializeOnlyWhenVisible: "no",
+				fillEntireposterScreen: "yes",
+				useVectorIcons: "no",
+				fillEntireVideoScreen: "no",
+				goFullScreenOnButtonPlay: "no",
+				playsinline: "yes",
+				useHEXColorsForSkin: "no",
+				normalHEXButtonsColor: "#666666",
+				useResumeOnPlay: "no",
+				useDeepLinking: "yes",
+				showPreloader: "yes",
+				preloaderBackgroundColor: "#000000",
+				preloaderFillColor: "#FFFFFF",
+				addKeyboardSupport: "yes",
+				autoScale: "yes",
+				showButtonsToolTip: "yes",
+				stopVideoWhenPlayComplete: "no",
+				playAfterVideoStop: "no",
+				autoPlay: "no",
+				autoPlayText: "Click To Unmute",
+				loop: "no",
+				shuffle: "no",
+				showErrorInfo: "no",
+				maxWidth: 980,
+				maxHeight: 552,
+				volume: .8,
+				rewindTime: 10,
+				buttonsToolTipHideDelay: 1.5,
+				backgroundColor: "#000000",
+				videoBackgroundColor: "#000000",
+				posterBackgroundColor: "#000000",
+				buttonsToolTipFontColor: "#5a5a5a",
+				//logo settings
+				showLogo: "no",
+				logoPath: "",
+				hideLogoWithController: "yes",
+				logoPosition: "topRight",
+				logoLink: "http://logoLink/",
+				logoPath: "",
+				logoMargins: 10,
+				//playlists/categories settings
+				showPlaylistsSearchInput: "no",
+				usePlaylistsSelectBox: "yes",
+				showPlaylistsButtonAndPlaylists: "no",// бесполезная кнопка с списками, которые не списки
+				showPlaylistsByDefault: "no",
+				thumbnailSelectedType: "opacity",
+				startAtPlaylist: 0,
+				buttonsMargins: 15,
+				thumbnailMaxWidth: 350,
+				thumbnailMaxHeight: 350,
+				horizontalSpaceBetweenThumbnails: 40,
+				verticalSpaceBetweenThumbnails: 40,
+				inputBackgroundColor: "#333333",
+				inputColor: "#999999",
+				//playlist settings
+				showPlaylistButtonAndPlaylist: "yes",
+				playlistPosition: "right",
+				showPlaylistByDefault: "yes",
+				showPlaylistName: "yes",
+				showSearchInput: "yes",
+				showLoopButton: "yes",
+				showShuffleButton: "yes",
+				showPlaylistOnFullScreen: "no",
+				showNextAndPrevButtons: "yes",
+				showThumbnail: "no",
+				showOnlyThumbnail: "no",
+				forceDisableDownloadButtonForFolder: "yes",
+				addMouseWheelSupport: "yes",
+				startAtRandomVideo: "no",
+				stopAfterLastVideoHasPlayed: "no",
+				addScrollOnMouseMove: "no",
+				randomizePlaylist: 'no',
+				folderVideoLabel: "Видео ",
+				playlistRightWidth: 390,
+				playlistBottomHeight: 380,
+				startAtVideo: 0,
+				maxPlaylistItems: 100,
+				thumbnailWidth: 71,
+				thumbnailHeight: 71,
+				spaceBetweenControllerAndPlaylist: 1,
+				spaceBetweenThumbnails: 1,
+				scrollbarOffestWidth: 8,
+				scollbarSpeedSensitivity: .5,
+				playlistBackgroundColor: "#000000",
+				playlistNameColor: "#FFFFFF",
+				thumbnailNormalBackgroundColor: "#1b1b1b",
+				thumbnailHoverBackgroundColor: "#313131",
+				thumbnailDisabledBackgroundColor: "#272727",
+				searchInputBackgroundColor: "#000000",
+				searchInputColor: "#999999",
+				youtubeAndFolderVideoTitleColor: "#FFFFFF",
+				folderAudioSecondTitleColor: "#999999",
+				youtubeOwnerColor: "#888888",
+				youtubeDescriptionColor: "#888888",
+				mainSelectorBackgroundSelectedColor: "#FFFFFF",
+				mainSelectorTextNormalColor: "#FFFFFF",
+				mainSelectorTextSelectedColor: "#000000",
+				mainButtonBackgroundNormalColor: "#212021",
+				mainButtonBackgroundSelectedColor: "#FFFFFF",
+				mainButtonTextNormalColor: "#FFFFFF",
+				mainButtonTextSelectedColor: "#000000",
+				//controller settings
+				showController: "yes",
+				showControllerWhenVideoIsStopped: "yes",
+				showNextAndPrevButtonsInController: "no",
+				showRewindButton: "no",
+				showPlaybackRateButton: "no",
+				showVolumeButton: "no",
+				showTime: "no",
+				showQualityButton: "yes",
+				showInfoButton: "yes",
+				showDownloadButton: "no",
+				showShareButton: "no",
+				showEmbedButton: "no",
+				showFullScreenButton: "yes",
+				disableVideoScrubber: "yes",
+				showScrubberWhenControllerIsHidden: "no",
+				showMainScrubberToolTipLabel: "no",
+				repeatBackground: "yes",
+				controllerHeight: 53,
+				controllerHideDelay: 3,
+				startSpaceBetweenButtons: 10,
+				spaceBetweenButtons: 10,
+				scrubbersOffsetWidth: 2,
+				mainScrubberOffestTop: 1, // убираем полосу времени видео
+				timeOffsetLeftWidth: 2,
+				timeOffsetRightWidth: 2,
+				timeOffsetTop: -1,
+				volumeScrubberHeight: 80,
+				volumeScrubberOfsetHeight: 20,
+				timeColor: "#888888",
+				scrubbersToolTipLabelBackgroundColor: "#FFFFFF",
+				scrubbersToolTipLabelFontColor: "#5a5a5a",
+				//advertisement on pause window
+				aopwTitle: "Реклама",
+				aopwWidth: 400,
+				aopwHeight: 240,
+				aopwBorderSize: 6,
+				aopwTitleColor: "#000000",
+				//subtitle
+				subtitlesOffLabel: "Subtitle off",
+				//popup add windows
+				showPopupAdsCloseButton: "yes",
+				//embed window and info window
+				embedAndInfoWindowCloseButtonMargins: 15,
+				borderColor: "#CDCDCD",
+				mainLabelsColor: "#000000",
+				secondaryLabelsColor: "#444444",
+				shareAndEmbedTextColor: "#777777",
+				inputBackgroundColor: "#c0c0c0",
+				inputColor: "#333333",
+				//login
+				//playIfLoggedIn:"no",
+				//playIfLoggedInMessage:"Please <a href='https://google.com' target='_blank'>login</a> to play this video.",
+				//audio visualizer
+				audioVisualizerLinesColor: "#0099FF",
+				audioVisualizerCircleColor: "#FFFFFF",
+				//lightbox settings
+				closeLightBoxWhenPlayComplete: "no",
+				lightBoxBackgroundOpacity: .6,
+				lightBoxBackgroundColor: "#000000",
+				//sticky on scroll
+				stickyOnScroll: "no",
+				stickyOnScrollShowOpener: "yes",
+				stickyOnScrollWidth: "700",
+				stickyOnScrollHeight: "394",
+				//sticky display settings
+				showOpener: "yes",
+				showOpenerPlayPauseButton: "yes",
+				verticalPosition: "bottom",
+				horizontalPosition: "center",
+				showPlayerByDefault: "yes",
+				animatePlayer: "yes",
+				openerAlignment: "right",
+				mainBackgroundImagePath: "content/minimal_skin_dark/main-background.png",
+				openerEqulizerOffsetTop: -1,
+				openerEqulizerOffsetLeft: 3,
+				offsetX: 0,
+				offsetY: 0,
+				//playback rate / speed
+				defaultPlaybackRate: 1, //0.25, 0.5, 1, 1.25, 1.2, 2
+				//cuepoints
+				executeCuepointsOnlyOnce: "no",
+				//annotations
+				showAnnotationsPositionTool: "no",
+				//ads
+				openNewPageAtTheEndOfTheAds: "no",
+				adsButtonsPosition: "left",
+				skipToVideoText: "You can skip to video in: ",
+				skipToVideoButtonText: "Skip Ad",
+				adsTextNormalColor: "#6a6a6a",
+				adsTextSelectedColor: "#000000",
+				adsBorderNormalColor: "#BBBBBB",
+				adsBorderSelectedColor: "#000000",
+				//a to b loop
+				useAToB: "no",
+				atbTimeBackgroundColor: "transparent",
+				atbTimeTextColorNormal: "#888888",
+				atbTimeTextColorSelected: "#000000",
+				atbButtonTextNormalColor: "#FFFFFF",
+				atbButtonTextSelectedColor: "#FFFFFF",
+				atbButtonBackgroundNormalColor: "#888888",
+				atbButtonBackgroundSelectedColor: "#000000",
+				//thumbnails preview
+				thumbnailsPreviewWidth: 196,
+				thumbnailsPreviewHeight: 110,
+				thumbnailsPreviewBackgroundColor: "#000000",
+				thumbnailsPreviewBorderColor: "#666",
+				thumbnailsPreviewLabelBackgroundColor: "#666",
+				thumbnailsPreviewLabelFontColor: "#FFF",
+				// context menu
+				showContextmenu: 'no',
+				showScriptDeveloper: "no",
+				contextMenuBackgroundColor: "#1f1f1f",
+				contextMenuBorderColor: "#1f1f1f",
+				contextMenuSpacerColor: "#333",
+				contextMenuItemNormalColor: "#666666",
+				contextMenuItemSelectedColor: "#FFFFFF",
+				contextMenuItemDisabledColor: "#333"
+			});
+		});
+
+
+	</script>
+
+</head>
+<!--начало-->
+<body style="background-color:#999999; padding:0px; margin:0px;">
+	<div id="myDiv" style="position:relative; left:0px; top:0px;"></div>
+
+	<!--  Списки -->
+	<ul id="playlists" style="display:none;">
+		<!-- -->
+		<li data-source="playlist-rus-fed" data-playlist-name="Федеральные каналы"
+			data-thumbnail-path="content/thumbnails/rus-fed.jpg">
+		</li>
+		<!--/ -->
+		<!-- -->
+		<li data-source="playlist-kinokanaly" data-playlist-name="Киноканалы"
+			data-thumbnail-path="content/thumbnails/none.png">
+		</li>
+		<!--/ -->
+		<!-- -->
+		<li data-source="playlist-muzyka" data-playlist-name="Музыкальные"
+			data-thumbnail-path="content/thumbnails/none.png">
+		</li>
+		<!--/ -->
+	</ul>
+	<!--  Списки -->
+
+
+	<!--  ----------------------------------------------------------------Федеральные каналы -->
+	<ul id="playlist-rus-fed" style="display:none;">
+		<li data-thumb-source="content/thumbnails/none.png"
+			data-video-source="https://edge4.1internet.tv/dash-live2/streams/1tv-dvr/1tvdash.mpd?*"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">Первый Канал HD</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+
+		<li data-thumb-source="content/thumbnails/none.png"
+			data-video-source="https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/index.m3u8"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">Россия 1 HD</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+
+		<li data-thumb-source="content/thumbnails/none.png"
+			data-video-source="http://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist_hdlow.m3u8?*HD"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">Звезда HD</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+
+		<li data-thumb-source="content/thumbnails/none.png" data-video-source="http://185.46.48.18:80/asvtv/index.m3u8"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">Патриот</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+
+
+		<!--начало--
+	<li data-thumb-source="content/thumbnails/none.png"
+		data-video-source="***"
+		data-poster-source="content/posters/poster.png" data-downloadable="no">
+		<div data-video-short-description="">
+			<div>
+				<p class="fwduvp-thumbnail-title">***</p>
+				<p class="fwduvp-thumbnail-description"></p>
+			</div>
+		</div>
+		<div data-video-long-description="">
+			<div>
+				<p class="fwduvp-video-title">Поддержка приложения</p>
+				<p class="fwduvp-video-main-description"><a
+						href="https://t.me/freetvfromtaav" target="_blank">Наш Telegram</a></p>
+			</div>
+		</div>
+	</li>
+	!--конец-->
+
+	</ul>
+	<!--  ----------------------------------------------------------------/Федеральные каналы -->
+
+	<!-- Киноканалы  -->
+	<ul id="playlist-kinokanaly" style="display:none;">
+
+		<li data-thumb-source="content/thumbnails/none.png" data-video-source="test.m3u8"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">Имя</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+		<li data-thumb-source="content/thumbnails/none.png" data-video-source="test.m3u8"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">Имя</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<!--  ----------------------------------------------------------------/Киноканалы -->
+	<!-- *** --
+<ul id="playlist2" style="display:none;">
+	<li data-thumb-source="content/thumbnails/none.png" data-video-source="test.m3u8"
+		data-poster-source="content/posters/poster.png" data-downloadable="no">
+		<div data-video-short-description="">
+			<div>
+				<p class="fwduvp-thumbnail-title">Имя</p>
+				<p class="fwduvp-thumbnail-description"></p>
+			</div>
+		</div>
+		<div data-video-long-description="">
+			<div>
+				<p class="fwduvp-video-title">Поддержка приложения</p>
+				<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+						Telegram</a></p>
+			</div>
+		</div>
+	</li>
+	<li data-thumb-source="content/thumbnails/none.png" data-video-source="test.m3u8"
+		data-poster-source="content/posters/poster.png" data-downloadable="no">
+		<div data-video-short-description="">
+			<div>
+				<p class="fwduvp-thumbnail-title">Имя</p>
+				<p class="fwduvp-thumbnail-description"></p>
+			</div>
+		</div>
+		<div data-video-long-description="">
+			<div>
+				<p class="fwduvp-video-title">Поддержка приложения</p>
+				<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+						Telegram</a></p>
+			</div>
+		</div>
+	</li>
+	
+</ul>
+!--  /**** -->
+	<!--  ----------------------------------------------------------------Музыка -->
+	<ul id="playlist-muzyka" style="display:none;">
+		<li data-thumb-source="content/thumbnails/none.png"
+			data-video-source="http://hls-03-video.webcaramba.com/rutv/live_720/index.m3u8"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">RU.TV HD</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+		<li data-thumb-source="content/thumbnails/none.png"
+			data-video-source="http://tntmsmotr.mediacdn.ru/cdn/smotr/playlist_hdlow.m3u8?*HD"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">ТНТ Music HD</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+		<li data-thumb-source="content/thumbnails/none.png"
+			data-video-source="http://live.stranafm.cdnvideo.ru/stranafm/stranafm_hd.sdp/playlist.m3u8"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">Страна FM HD</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+		<li data-thumb-source="content/thumbnails/none.png"
+			data-video-source="http://135.181.115.81:8000/play/a03l/index.m3u8?token=livetv"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">Europa Plus TV</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+		<li data-thumb-source="content/thumbnails/none.png"
+			data-video-source="http://91.247.68.229:8000/play/eee/index.m3u8"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">1HD Music</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+		<li data-thumb-source="content/thumbnails/none.png" data-video-source="http://hz1.teleport.cc/HLS/HD.m3u8"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">Первый Музыкальный HD</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+
+		<li data-thumb-source="content/thumbnails/none.png"
+			data-video-source="http://bitcdn-kronehit.bitmovin.com/v2/hls/chunklist_b1628000.m3u8"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">KroneHit TV HD</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+
+		<li data-thumb-source="content/thumbnails/none.png"
+			data-video-source="http://hls-shansontv.cdnvideo.ru/shansontv/shansontv.sdp/playlist.m3u8"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">Шансон ТВ</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+
+		<li data-thumb-source="content/thumbnails/none.png"
+			data-video-source="http://chanson-video.hostingradio.ru:8080/hls/chansonabr/live.m3u8"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">Радио Шансон HD</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+
+		<li data-thumb-source="content/thumbnails/none.png"
+			data-video-source="http://streamer.rtcommufa.ru:1935/ptica/ptica1/playlist.m3u8"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">Жар-Птица</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+
+		<li data-thumb-source="content/thumbnails/none.png"
+			data-video-source="https://bstrtrs.mediacdn.ru/rtrs/kurai/hls/playlist.m3u8"
+			data-poster-source="content/posters/poster.png" data-downloadable="no">
+			<div data-video-short-description="">
+				<div>
+					<p class="fwduvp-thumbnail-title">Курай</p>
+					<p class="fwduvp-thumbnail-description"></p>
+				</div>
+			</div>
+			<div data-video-long-description="">
+				<div>
+					<p class="fwduvp-video-title">Поддержка приложения</p>
+					<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+							Telegram</a></p>
+				</div>
+			</div>
+		</li>
+
+		<!--<li data-thumb-source="content/thumbnails/none.png" data-video-source="***"
+		data-poster-source="content/posters/poster.png" data-downloadable="no">
+		<div data-video-short-description="">
+			<div>
+				<p class="fwduvp-thumbnail-title">***</p>
+				<p class="fwduvp-thumbnail-description"></p>
+			</div>
+		</div>
+		<div data-video-long-description="">
+			<div>
+				<p class="fwduvp-video-title">Поддержка приложения</p>
+				<p class="fwduvp-video-main-description"><a href="https://t.me/freetvfromtaav" target="_blank">Наш
+						Telegram</a></p>
+			</div>
+		</div>
+	</li>-->
+
+	</ul>
+	<!--  ----------------------------------------------------------------/Музыка -->
+	<!--почти конец-->
+	<!-- sw -->
+	<script type="text/javascript" src="https://alerovf705.github.io/iptv/sw.js"></script>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker
+				.register('/sw.js')
+				.then(function () { console.log("Service Worker Registered"); });
+		}
+	</script>
+	<!-- /sw -->
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+			m[i].l = 1 * new Date();
+			for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(101478542, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/101478542" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+</body>
+
+</html>
